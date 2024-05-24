@@ -1,0 +1,27 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTarea.CustomLayoutPage">
+    <Grid RowDefinitions="*, *, *"
+          ColumnDefinitions="*, *">
+        <Grid Grid.Row="0" Grid.Column="0">
+            <BoxView BackgroundColor="Green" />
+            <Label Text="Row 0, Column 0" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <BoxView BackgroundColor="Blue" />
+            <Label Text="Row 0, Column 1" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <BoxView BackgroundColor="DarkRed" />
+            <Label Text="Row 1, Column 0" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <BoxView BackgroundColor="Purple" />
+            <Label Text="Row 1, Column 1" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <BoxView BackgroundColor="Red" />
+            <Label Text="Row 2, Columns 0 and 1" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>
